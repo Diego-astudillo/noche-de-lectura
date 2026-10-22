@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conejita y Osito · Noche de lectura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sky" id="sky"></div>
+<div class="shooting"></div>
+<main>
+  <header class="top">
+    <p class="spark" aria-hidden="true">✦ ✧ ✦</p>
+    <h1>Noche de lectura</h1>
+    <p class="lead">Entre páginas, estrellas y un poquito de magia, la onejita y el osito te invitan a perderte en otro mundo.</p>
+  </header>
+  <svg class="scene" viewBox="0 0 600 400" role="img" aria-label="Una conejita y un osito leyendo libros bajo las estrellas">
+    <circle cx="505" cy="62" r="34" fill="#fbeab8"/><circle cx="518" cy="54" r="30" fill="#2a1a52"/>
+    <ellipse cx="300" cy="352" rx="285" ry="34" fill="#5b3a94"/>
+    <ellipse cx="300" cy="348" rx="250" ry="24" fill="#7550b0"/>
+    <g class="fly"><circle cx="70" cy="250" r="3"/><circle cx="540" cy="230" r="3"/><circle cx="300" cy="120" r="2.5"/><circle cx="35" cy="150" r="2.5"/></g>
+
+    <g id="bunny" class="char" data-say="bunny">
+      <g class="ear er"><ellipse cx="148" cy="72" rx="16" ry="48" fill="#fff4f0"/><ellipse cx="148" cy="76" rx="8" ry="34" fill="#f7b8cf"/></g>
+      <g class="ear el"><ellipse cx="192" cy="72" rx="16" ry="48" fill="#fff4f0"/><ellipse cx="192" cy="76" rx="8" ry="34" fill="#f7b8cf"/></g>
+      <ellipse cx="170" cy="252" rx="62" ry="72" fill="#fff4f0"/>
+      <circle cx="170" cy="140" r="50" fill="#fff4f0"/>
+      <g class="eyes"><ellipse cx="150" cy="144" rx="5" ry="6.5" fill="#2a1a52"/><ellipse cx="190" cy="144" rx="5" ry="6.5" fill="#2a1a52"/>
+      <circle cx="152" cy="142" r="1.8" fill="#fff"/><circle cx="192" cy="142" r="1.8" fill="#fff"/></g>
+      <circle cx="134" cy="158" r="8" fill="#f7b8cf" opacity=".7"/><circle cx="206" cy="158" r="8" fill="#f7b8cf" opacity=".7"/>
+      <path d="M164 156 Q170 162 176 156 Z" fill="#e58aa8"/><path d="M170 160 v5 M170 165 q-6 5 -11 1 M170 165 q6 5 11 1" stroke="#c46a8a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <g id="bear" class="char b2" data-say="bear">
+      <circle cx="394" cy="98" r="22" fill="#a86f48"/><circle cx="394" cy="100" r="11" fill="#e9b7a0"/>
+      <circle cx="466" cy="98" r="22" fill="#a86f48"/><circle cx="466" cy="100" r="11" fill="#e9b7a0"/>
+      <ellipse cx="430" cy="258" rx="72" ry="76" fill="#b07a52"/>
+      <ellipse cx="430" cy="270" rx="40" ry="46" fill="#e8c9a0"/>
+      <circle cx="430" cy="142" r="56" fill="#b07a52"/>
+      <g class="eyes"><ellipse cx="408" cy="134" rx="5" ry="6.5" fill="#2a1a52"/><ellipse cx="452" cy="134" rx="5" ry="6.5" fill="#2a1a52"/>
+      <circle cx="410" cy="132" r="1.8" fill="#fff"/><circle cx="454" cy="132" r="1.8" fill="#fff"/></g>
+      <ellipse cx="430" cy="160" rx="25" ry="19" fill="#e8c9a0"/>
+      <ellipse cx="430" cy="152" rx="8" ry="6" fill="#3b2326"/>
+      <path d="M430 158 v6 M430 164 q-7 6 -13 1 M430 164 q7 6 13 1" stroke="#3b2326" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="396" cy="156" r="8" fill="#f09aa8" opacity=".6"/><circle cx="464" cy="156" r="8" fill="#f09aa8" opacity=".6"/>
+    </g>
+  </svg>
+
+  <section class="card" aria-live="polite">
+    <blockquote id="quote"></blockquote>
+    <p id="source"></p>
+    <button id="next" type="button">Pasar la página</button>
+  </section>
+  <p class="hint">Toca a la conejita o al osito</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
